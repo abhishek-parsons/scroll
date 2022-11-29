@@ -1,7 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 :root {
   --main-bg-color: black;
+  --main-font-family: "Inter", Arial, Helvetica, sans-serif;
+  --main-text-color: white;
+  --link-text-decoration: none;
+
+  --text-small: 16px;
+  --text-medium: 20px;
+  --text-large: 20px;
 }
 
 body {
   background-color: var(--main-bg-color);
+  font-family: var(--main-font-family);
+  color: var(--main-text-color);
+  height: 100vh;
+}
+
+a {
+  color: var(--main-text-color);
+  text-decoration: var(--link-text-decoration);
+}
+
+/* LANGUAGE SELECTION */
+main.language-selection-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-small);
+  font-weight: 300;
+}
+
+main.language-selection-container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+
+main.language-selection-container a {
+  opacity: 50%;
+  transition: 300ms opacity;
+}
+
+main.language-selection-container a:hover {
+  opacity: 100%;
 }
